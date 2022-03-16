@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio | Vivek</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Portfolio</h4>
+        </div>
+        <ul class="nav-links" id="sidebar">
+            <li><a  onclick='handlescroll("#particles-js")'>Home</a></li>
+            <li><a  onclick='handlescroll(".about")'>About</a></li>
+            <li><a  onclick='handlescroll(".skills")'>Skills</a></li>
+            <li><a  onclick='handlescroll(".contact")'>Contact</a></li>
+        </ul>
+        <div class="burger" id="togButton">
+            <div class="line1 "></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div id="particles-js">
+        
+        <img src="static/profile.png" alt="Profile">
+
+        <div class="introText">
+            <span style="color: aliceblue;">Hello, I am</span><br>
+            Vivek Kumar Verma
+        </div>
+        <div class = "typingText">
+            <p class="staticText">I'm a</p>
+            <p class="typeText" data-wait="2000" data-words='["Developer","Competitive Programmer","Student"]'></p>
+        </div>
+
+    </div>
+
+    <div class="about">
+        <div class="aboutTitle">
+            <img src="static/aboutme.png" alt="">
+            <h2>About Me</h3>
+        </div>
+        <div class="aboutBody">
+            <div class="rotatingText">
+                <div class="circle">
+                    <div class="aboutlogo"></div>
+                    <div class="innertext">
+                        <p>Vivek Kumar Verma - Mechanical Enginnering, IIT BHU -</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutText">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum ullam officia asperiores illo
+                    provident molestias facere nisi dolorum, laudantium natus facilis beatae sint veniam inventore quis
+                    ipsum quasi vitae culpa eligendi reiciendis odio sit tempora. Nihil cumque asperiores consequuntur
+                    laudantium enim deleniti minima doloremque voluptatem adipisci voluptas a neque exercitationem
+                    quidem libero minus porro unde, odit harum eaque iure fugiat laborum natus. Sint laudantium dolore,
+                    nobis dolor at aperiam mollitia et nulla neque nemo animi eum voluptatum, eius eveniet eligendi
+                    placeat a consequuntur qui omnis cum. Nostrum alias ducimus harum laborum, soluta magni
+                    reprehenderit fugiat quasi aut esse ea?</p>
+            </div>
+        </div>
+        <div class="downloadbutton">
+        <a class="cvdownbtn" href="static/cv.pdf" download="newfilename">Download My CV</a></div>
+    </div>
+
+    <div class="skills">
+        <div class="skillTitle">
+            <img src="static/tools.png" alt="">
+            <h2>My Skills</h3>
+        </div>
+        <div class=container>
+            <div class="cardContainer">
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="static/proglan.png">
+                </div>
+                <div class=content>
+                    <h2 class="head">Programming Languages</h2>
+                    <h2 style="padding-left: 20px;">
+                        <ul>
+                            <li>&nbspC</li>
+                            <li>&nbspC++</li>
+                            <li>&nbspPython</li>
+                        </ul>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="cardContainer">
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="static/webdevlp.png">
+                </div>
+                <div class=content>
+                    <h2 class="head">Web Development</h2>
+                    <h2 style="padding-left: 20px;padding-top: 10px;">
+                        <ul>
+                            <li>&nbspHTML</li>
+                            <li>&nbspCSS</li>
+                            <li>&nbspJavascript</li>
+                            <li>&nbspReact</li>
+                            <li>&nbspDjango</li>
+                        </ul>
+                    </h2>
+                </div>
+            </div>
+            </div>
+            <div class="cardContainer">
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="static/indusknow.png">
+                </div>
+                <div class=content>
+                    <h2 class="head">Industry Knowledge</h2>
+                    <h2 style="padding-left: 20px;padding-top: 10px;">
+                        <ul>
+                            <li>&nbspData Structures</li>
+                            <li>&nbspAlgorithns</li>
+                            <li>&nbspGit & Github</li>
+                        </ul>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contactTitle">
+            <div class="horLine"></div>
+            <h2>Get In Touch</h2>
+            <div class="horLine"></div>
+        </div>
+        <div class="socialMediaLinks">
+            <a href="https://www.linkedin.com/in/vivek-kv-2002/" target = "blank"class="socicon fa fa-linkedin"></a>
+            <a href="https://github.com/cyber-vivek" target = "blank"class="socicon fa fa-github"></a>
+            <a href="https://www.instagram.com/vivek_verma.830/" target = "blank"class="socicon fa fa-instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100010384099029" target = "blank"class="socicon fa fa-facebook"></a>
+
+        </div>
+        <div class="contactInfo">
+            <div class="phInfo">
+                <div class="phicon">
+                    <i class="fa fa-phone"> Call</i>
+                </div>
+                <div class="emcwrapper">
+                <a href="tel:8303511211" class="emorcall">8303511211</a></div>
+            </div>
+            <div class="emailInfo">
+                <div class="emailicon">
+                    <i class="fa fa-envelope"> Email</i>
+                </div>
+                <div class="emcwrapper">
+                    <a href = "mailto: vivekverma3580@gmail.com" class="emorcall">vivekverma3580@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footyear"> Copyright &copy; 2022</div>
+        <div class="footMadeinfo"> Made with 💓 by Vivek</div>
+    </footer>
+
+
+    <script src="index.js"></script>
+    <script src="particles.js-master/particles.js">
+    </script>
+    <script src="/particles.js-master/demo/js/app.js">
+    </script>
+     <script>
+        const text = document.querySelector('.innertext p');
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+                `<span style = " transform:rotate(${i * 6.7}deg)">${char}</span>`
+        ).join("")
+
+    </script>
+</body>
+
+</html>
