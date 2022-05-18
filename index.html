@@ -18,10 +18,11 @@
             <h4>Portfolio</h4>
         </div>
         <ul class="nav-links" id="sidebar">
-            <li><a  onclick='handlescroll("#particles-js")'>Home</a></li>
-            <li><a  onclick='handlescroll(".about")'>About</a></li>
-            <li><a  onclick='handlescroll(".skills")'>Skills</a></li>
-            <li><a  onclick='handlescroll(".contact")'>Contact</a></li>
+            <li><a onclick='handlescroll("#particles-js")'>Home</a></li>
+            <li><a onclick='handlescroll(".about")'>About</a></li>
+            <li><a onclick='handlescroll(".skills")'>Skills</a></li>
+            <li><a onclick='handlescroll(".projects")'>Projects</a></li>
+            <li><a onclick='handlescroll(".contact")'>Contact</a></li>
         </ul>
         <div class="burger" id="togButton">
             <div class="line1 "></div>
@@ -30,19 +31,20 @@
         </div>
     </nav>
     <div id="particles-js">
-        
-        <img src="static/profile.png" alt="Profile">
-
-        <div class="introText">
-            <span style="color: aliceblue;">Hello, I am</span><br>
-            Vivek Kumar Verma
-        </div>
-        <div class = "typingText">
-            <p class="staticText">I'm a</p>
-            <p class="typeText" data-wait="2000" data-words='["Developer","Competitive Programmer","Student"]'></p>
-        </div>
-
     </div>
+    <div class="grid-cont">
+        <div class="frame">
+    <img src="static/profile.png" alt="Profile">
+</div>
+    <div class="introText">
+        <span style="color: aliceblue;">Hello, I am</span><br>
+        Vivek Kumar Verma
+    </div>
+    <div class="typingText">
+        <p class="staticText">I'm a</p>
+        <p class="typeText" data-wait="2000" data-words='["Developer","Competitive Programmer","Student"]'></p>
+    </div>
+</div>
 
     <div class="about">
         <div class="aboutTitle">
@@ -61,13 +63,16 @@
             <div class="aboutText">
                 <p>Hello, My name is Vivek Kumar Verma, 3rd year Mechanical engineering undergraduate
                     at IIT BHU,VARANASI. I love solving problems and I am interested in competitive
-                    programming, data structures Algorithms and Web development. I have done prjects
+                    programming, Data structures Algorithms and Web development. I have done projects
                     such as weather app, entertainment hub, snake game and blog app.My hobbies include
                     playing cricket and video games, reading books etc.</p>
             </div>
         </div>
         <div class="downloadbutton">
-        <a class="cvdownbtn" onclick="alert('Due to some issues CV cannot be displayed right now.\nPlease contact me regarging this.')" download="newfilename" style="cursor: pointer;">Download My CV</a></div>
+            <a class="cvdownbtn"
+                onclick="alert('Due to some issues CV cannot be displayed right now.\nPlease contact me regarging this.')"
+                download="newfilename" style="cursor: pointer;">Download My CV</a>
+        </div>
     </div>
 
     <div class="skills">
@@ -77,58 +82,137 @@
         </div>
         <div class=container>
             <div class="cardContainer">
-            <div class=card>
-                <div class=image>
-                    <img href="#" src="static/proglan.png">
+                <div class=card>
+                    <div class=image>
+                        <img href="#" src="static/proglan.png">
+                    </div>
+                    <div class=content>
+                        <h2 class="head">Programming Languages</h2>
+                        <h2 style="padding-left: 20px;">
+                            <ul>
+                                <li>&nbspC</li>
+                                <li>&nbspC++</li>
+                                <li>&nbspPython</li>
+                            </ul>
+                        </h2>
+                    </div>
                 </div>
-                <div class=content>
-                    <h2 class="head">Programming Languages</h2>
-                    <h2 style="padding-left: 20px;">
-                        <ul>
-                            <li>&nbspC</li>
-                            <li>&nbspC++</li>
-                            <li>&nbspPython</li>
-                        </ul>
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="cardContainer">
-            <div class=card>
-                <div class=image>
-                    <img href="#" src="static/webdevlp.png">
-                </div>
-                <div class=content>
-                    <h2 class="head">Web Development</h2>
-                    <h2 style="padding-left: 20px;padding-top: 10px;">
-                        <ul>
-                            <li>&nbspHTML</li>
-                            <li>&nbspCSS</li>
-                            <li>&nbspJavascript</li>
-                            <li>&nbspReact</li>
-                            <li>&nbspDjango</li>
-                        </ul>
-                    </h2>
-                </div>
-            </div>
             </div>
             <div class="cardContainer">
-            <div class=card>
-                <div class=image>
-                    <img href="#" src="static/indusknow.png">
+                <div class=card>
+                    <div class=image>
+                        <img href="#" src="static/webdevlp.png">
+                    </div>
+                    <div class=content>
+                        <h2 class="head">Web Development</h2>
+                        <h2 style="padding-left: 20px;padding-top: 10px;">
+                            <ul>
+                                <li>&nbspHTML</li>
+                                <li>&nbspCSS</li>
+                                <li>&nbspJavascript</li>
+                                <li>&nbspReact</li>
+                                <li>&nbspDjango</li>
+                            </ul>
+                        </h2>
+                    </div>
                 </div>
-                <div class=content>
-                    <h2 class="head">Industry Knowledge</h2>
-                    <h2 style="padding-left: 20px;padding-top: 10px;">
-                        <ul>
-                            <li>&nbspData Structures</li>
-                            <li>&nbspAlgorithns</li>
-                            <li>&nbspGit & Github</li>
-                        </ul>
-                    </h2>
+            </div>
+            <div class="cardContainer">
+                <div class=card>
+                    <div class=image>
+                        <img href="#" src="static/indusknow.png">
+                    </div>
+                    <div class=content>
+                        <h2 class="head">Industry Knowledge</h2>
+                        <h2 style="padding-left: 20px;padding-top: 10px;">
+                            <ul>
+                                <li>&nbspData Structures</li>
+                                <li>&nbspAlgorithns</li>
+                                <li>&nbspGit & Github</li>
+                            </ul>
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="projects">
+        <div class="projectTitle">
+            <img src="static/Projects.png" alt="">
+            <h2>Projects</h2>
+        </div>
+        <div class="project-card-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/entertainment hub.jpg" alt="ss of project">
+                </div>
+                <div class="project-desc">
+                    <div class="project-title">
+                        Entertainment-Hub
+                    </div>
+                    &#10148; Developed this fully responsive, single-page web app using React.js framework and Material-UI that
+                    shows trending Movies and TV Series
+                    <br>
+                    <br>
+
+                    &#10148; Added the functionalities of selecting different Genres using Material-UI Chip, searching movies
+                    and
+                    TV Series by name to make it more user interactive
+                    <br>
+                    <br>
+
+                    &#10148; Used The Movie Db API to fetch the data from the server.
+
+                </div>
+                <div class="project-nav-links">
+                    <a href="#" class="project-github-link">Source Code</a>
+                    <a href="#" class="project-live-link">See Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/snake game.png" alt="ss of project">
+                </div>
+                <div class="project-desc">
+                    <div class="project-title">
+                        Snake Game
+                    </div>
+                    &#10148; Build this fully working Snake game using only HTML, CSS, Javascript
+                    <br>
+                    <br>
+                    &#10148; Used requestAnimationFrame and HTML DOM to render the screen.
+                    <br>
+                    <br>
+                    &#10148; Added the feature to save high score using window local storage property
+                </div>
+                <div class="project-nav-links">
+                    <a href="#" class="project-github-link">Source Code</a>
+                    <a href="#" class="project-live-link">See Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/weather forcast.jpg" alt="ss of project">
+                </div>
+                <div class="project-desc">
+                    <div class="project-title">
+                        Weather App
+                    </div>
+                    &#10148; Used React.js framework to build this single-page web application that displays the city's current
+                    weather and forecast of seven days
+                    <br>
+                    <br>
+                    &#10148; Received data from OpenWeatherMap API by Fetch request and displayed using React components
+                    <br>
+                    <br>
+                    &#10148; Used react chartjs to display forecast data in the form of line and bar charts
+                </div>
+                <div class="project-nav-links">
+                    <a href="#" class="project-github-link">Source Code</a>
+                    <a href="#" class="project-live-link">See Project</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -139,10 +223,11 @@
             <div class="horLine"></div>
         </div>
         <div class="socialMediaLinks">
-            <a href="https://www.linkedin.com/in/vivek-kv-2002/" target = "blank"class="socicon fa fa-linkedin"></a>
-            <a href="https://github.com/cyber-vivek" target = "blank"class="socicon fa fa-github"></a>
-            <a href="https://www.instagram.com/vivek_verma.830/" target = "blank"class="socicon fa fa-instagram"></a>
-            <a href="https://www.facebook.com/profile.php?id=100010384099029" target = "blank"class="socicon fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/vivek-kv-2002/" target="blank" class="socicon fa fa-linkedin"></a>
+            <a href="https://github.com/cyber-vivek" target="blank" class="socicon fa fa-github"></a>
+            <a href="https://www.instagram.com/vivek_verma.830/" target="blank" class="socicon fa fa-instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100010384099029" target="blank"
+                class="socicon fa fa-facebook"></a>
 
         </div>
         <div class="contactInfo">
@@ -151,14 +236,15 @@
                     <i class="fa fa-phone"> Call</i>
                 </div>
                 <div class="emcwrapper">
-                <a href="tel:8303511211" class="emorcall">8303511211</a></div>
+                    <a href="tel:83035xxxxx" class="emorcall">83035xxxxx</a>
+                </div>
             </div>
             <div class="emailInfo">
                 <div class="emailicon">
                     <i class="fa fa-envelope"> Email</i>
                 </div>
                 <div class="emcwrapper">
-                    <a href = "mailto: vivekverma3580@gmail.com" class="emorcall">vivekverma3580@gmail.com</a>
+                    <a href="mailto: vivekverma3580@gmail.com" class="emorcall">vivekverma3580@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -175,7 +261,7 @@
     </script>
     <script src="particles.js-master/demo/js/app.js">
     </script>
-     <script>
+    <script>
         const text = document.querySelector('.innertext p');
         text.innerHTML = text.innerText.split("").map(
             (char, i) =>

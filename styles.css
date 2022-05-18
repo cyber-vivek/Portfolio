@@ -10,14 +10,17 @@
 /* Navigation bar css */
 
 #particles-js {
-    position: relative;
+    position: absolute;
     background: #1c303c;
-    height: 92vh;
+    /* min-height: max(100vh,100px); */
+    /* min-height: 80vh; */
+    height: max(100vh,500px);
+    width: 100%;
     border-bottom: 1px solid aliceblue;
 }
 
 nav{
-    position: sticky;
+    position: fixed;
     z-index: 10;
     top:0;
     width: 100%;
@@ -38,7 +41,7 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 48%;
 }
 .nav-links li{
     list-style: none;
@@ -73,7 +76,7 @@ nav{
         width: 60%;
     }
 }
-@media screen and (max-width:760px){
+@media screen and (max-width:890px){
     html,body{
         overflow-x: hidden;
     }
@@ -125,26 +128,88 @@ nav{
     transform: translateY(-8px) rotate(-45deg);
 }
 
-#particles-js img{
-    position: absolute;
-    bottom: 1%;
-    right: 5%;
-    width: 33vw;
+.grid-cont{
+    position: relative;
+    width: 99%;
+    height: max(100vh,500px);
+    display: grid;
+    padding-top: 8vh;
+    align-items: center;
+    justify-items:start;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
+.frame {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color:rgb(221, 221, 177,0.7);
+    border:solid 3vmin #eee;
+    border-bottom-color:#fff;
+    border-left-color:#eee;
+    border-radius:2px;
+    border-right-color:#eee;
+    border-top-color:#ddd;
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+    /* box-sizing:border-box; */
+    display:inline-block;
+    /* margin:10vh 10vw; */
+    height: 410px;
+    padding:8vmin;
+    width: 380px;
+    position:relative;
+    /* top: 20vh;
+    right: 2vw; */
+    text-align:center;}
+    .frame:before {
+      border-radius:2px;
+      bottom:-2vmin;
+      box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+      content:"";
+      left:-2vmin;
+      position:absolute;
+      right:-2vmin;
+      top:-2vmin;
+    }
+    .frame:after {
+      border-radius:2px;
+      bottom:-2.5vmin;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+      content:"";
+      left:-2.5vmin;
+      position:absolute;
+      right:-2.5vmin;
+      top:-2.5vmin;
+    }
+    .frame img{
+        position: absolute;
+        bottom: 0%;
+        left: 5px;
+        width: 350px;
+    }
+
 .introText{
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    margin-left:3vw;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* position: absolute; */
+    /* top: 20%; */
+    /* left: 10%; */
     color: rgb(228 128 128);
     font-size: 45px;
     /* text-align: center; */
 }
 
 .typingText{
-    position: absolute;
-    top: 60%;
-    left: 10%;
+    margin-left: 3vw;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* position: relative; */
+    /* top: 60%;
+    left: 10%; */
 
 }
 .typingText .staticText{
@@ -152,6 +217,7 @@ nav{
     color: aliceblue;
 }
 .typingText .typeText{
+    min-height: 58px;
     color: rgb(228 128 128);
     font-size: 50px;
 }
@@ -172,6 +238,45 @@ nav{
     }
     .typingText .typeText{
         font-size: 38px;
+    }
+}
+
+@media screen and (max-width:1020px){
+    .grid-cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        
+    }
+    .introText{
+        grid-row-start: 1;
+    }
+    .typingText{
+        grid-row-start: 4;
+    }
+    .frame{
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-row-start: 2;
+        height: 300px;
+        width: 260px;
+    }
+    .frame img{
+        width: 250px;
+        left: 0px;
+    }
+    .introText{
+        left: 0;
+        width: 100%;
+        top: 10%;
+        text-align: center;
+    }
+    .typingText{
+        left: 0;
+        width:100%;
+        top: 76%;
+        text-align: center;
     }
 }
 
@@ -456,6 +561,108 @@ nav{
 /* Skill section css ends */
 
 
+/* Projects section css */
+
+.projects{
+    background-color: #1c303c;
+    border-bottom: 1px solid aliceblue;
+    min-height: 60vh;
+    padding-bottom: 40px;
+}
+
+.projectTitle {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectTitle h2{
+    display: inline-block;
+    color: aliceblue;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    border-bottom: rgb(253, 165, 15) 2px solid;
+}
+.projectTitle img{
+    width: 5vw;
+}
+.project-card-container{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.project-card{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius : 15px;
+    background-color : rgb(40 57 70);
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+}
+.project-image img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid aliceblue;
+    border-bottom: 4px solid aliceblue;
+}
+.project-desc{
+    padding: 15px;
+    color:aliceblue;
+    height: 400px;
+}
+.project-title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(221, 224, 14);
+    padding-bottom: 30px;
+}
+.project-nav-links{
+    display: flex;
+    justify-content:space-around;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+.project-github-link,.project-live-link{
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    width: 120px;
+    height: 35px;
+    border: 2px solid rgb(109, 27, 27,0.7);
+    background-color: rgb(109, 27, 27,0.7);
+    color: aliceblue;
+    border-radius: 50px;
+}
+.project-github-link:hover,.project-live-link:hover{
+    border: 2px solid rgb(109, 27, 27);
+    background-color: rgb(109, 27, 27);
+}
+
+@media screen and (max-width:1020px){
+    .project-card-container{
+        padding-top: 0px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .project-card{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:760px){
+  .projectTitle h2{
+      font-size: 6vw;
+  }
+  .projectTitle img{
+      width: 10vw;
+  }
+}
+
 /* Contact Section css */
 
 .contact{
@@ -542,7 +749,7 @@ nav{
   }
   .emcwrapper:hover{
       transition: 0.3s;
-      transform: translateX(15px);
+      transform: translateX(8px);
   }
 
   /* Contact css ends */
