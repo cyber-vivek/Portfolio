@@ -119,3 +119,16 @@ function handlescroll(elem){
     pos-=navh;
     window.scrollTo(0,pos);
 }
+
+
+// rec 
+
+
+let url = "https://djnago1.vercel.app/info/"
+
+async function fun(){
+    let res = await fetch(url);
+    console.log(res);
+}
+
+fun();
