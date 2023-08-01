@@ -15,7 +15,7 @@
 <body>
     <nav>
         <div class="logo">
-            <h4 onclick="handlescroll('#particles-js')" ><span>P</span>ort<span>f</span>olio</h4>
+            <h4 onclick="handlescroll('#particles-js')"><span>P</span>ort<span>f</span>olio</h4>
         </div>
         <ul class="nav-links" id="sidebar">
             <li><a onclick='handlescroll("#particles-js")'>Home</a></li>
@@ -23,6 +23,7 @@
             <li><a onclick='handlescroll(".skills")'>Skills</a></li>
             <li><a onclick='handlescroll(".projects")'>Projects</a></li>
             <li><a onclick='handlescroll(".contact")'>Contact</a></li>
+            <li><a onclick='handlescroll(".timeline")'>Timeline</a></li>
         </ul>
         <div class="burger" id="togButton">
             <div class="line1 "></div>
@@ -34,17 +35,17 @@
     </div>
     <div class="grid-cont">
         <div class="frame">
-    <img src="static/profile.png" alt="Profile">
-</div>
-    <div class="introText">
-        <span style="color: aliceblue;">Hello, I am</span><br>
-        Vivek Kumar Verma
+            <img src="static/profile.png" alt="Profile">
+        </div>
+        <div class="introText">
+            <span style="color: aliceblue;">Hello, I am</span><br>
+            Vivek Kumar Verma
+        </div>
+        <div class="typingText">
+            <p class="staticText">I'm a</p>
+            <p class="typeText" data-wait="2000" data-words='["Developer","Competitive Programmer","Student"]'></p>
+        </div>
     </div>
-    <div class="typingText">
-        <p class="staticText">I'm a</p>
-        <p class="typeText" data-wait="2000" data-words='["Developer","Competitive Programmer","Student"]'></p>
-    </div>
-</div>
 
     <div class="about">
         <div class="aboutTitle">
@@ -144,6 +145,9 @@
         </div>
         <div class="project-card-container">
             <div class="project-card">
+                <svg height="514.8px" width="320px" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="514.8" width="320" />
+                </svg>
                 <div class="project-image">
                     <img src="static/entertainment hub.jpg" alt="ss of project">
                 </div>
@@ -151,19 +155,10 @@
                     <div class="project-title">
                         Entertainment-Hub
                     </div>
-                    &#10148; Developed this fully responsive, single-page web app using React.js framework and Material-UI that
-                    shows trending Movies and TV Series
+                    Developed using <i>React.js,</i> <i>Material-UI,</i> <i>The Movie Db API.</i>
                     <br>
-                    <br>
-
-                    &#10148; Added the functionalities of selecting different Genres using Material-UI Chip, searching movies
-                    and
-                    TV Series by name to make it more user interactive
-                    <br>
-                    <br>
-
-                    &#10148; Used The Movie Db API to fetch the data from the server.
-
+                    &nbsp;Added the functionalities of selecting different Genres using Material-UI Chip, and searching
+                    movies.
                 </div>
                 <div class="project-nav-links">
                     <a href="#" class="project-github-link">Source Code</a>
@@ -171,6 +166,9 @@
                 </div>
             </div>
             <div class="project-card">
+                <svg height="514.8px" width="320px" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="514.8" width="320" />
+                </svg>
                 <div class="project-image">
                     <img src="static/snake game.png" alt="ss of project">
                 </div>
@@ -178,13 +176,10 @@
                     <div class="project-title">
                         Snake Game
                     </div>
-                    &#10148; Build this fully working Snake game using only HTML, CSS, Javascript
+                    Developed Using <i>HTML, CSS, Javascript.</i>
                     <br>
+                    &nbsp;Used requestAnimationFrame and HTML DOM to render the screen, and Locastorage to save the data.
                     <br>
-                    &#10148; Used requestAnimationFrame and HTML DOM to render the screen.
-                    <br>
-                    <br>
-                    &#10148; Added the feature to save high score using window local storage property
                 </div>
                 <div class="project-nav-links">
                     <a href="#" class="project-github-link">Source Code</a>
@@ -192,6 +187,9 @@
                 </div>
             </div>
             <div class="project-card">
+                <svg height="514.8px" width="320px" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="514.8" width="320" />
+                </svg>
                 <div class="project-image">
                     <img src="static/weather forcast.jpg" alt="ss of project">
                 </div>
@@ -199,14 +197,9 @@
                     <div class="project-title">
                         Weather App
                     </div>
-                    &#10148; Used React.js framework to build this single-page web application that displays the city's current
-                    weather and forecast of seven days
+                    Developed using <i>React.js, OpenWeatherMap API, Rect chartjs</i>
                     <br>
-                    <br>
-                    &#10148; Received data from OpenWeatherMap API by Fetch request and displayed using React components
-                    <br>
-                    <br>
-                    &#10148; Used react chartjs to display forecast data in the form of line and bar charts
+                    &nbsp; Displays the weather data of the city and forcast for seven days.
                 </div>
                 <div class="project-nav-links">
                     <a href="#" class="project-github-link">Source Code</a>
@@ -214,6 +207,82 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timelineTitle">
+            <img src="static/timeline.png" alt="timeline logo">
+            <h2>Timeline</h2>
+        </div>
+        <ul class="timelineList">
+            <li>
+                <div>
+                    <span>June 2023</span>
+                    <div class="content">
+                        <h3>Started working as SDE</h3>
+                        <ul>
+                            <li>Started working as Software Developer at Edfora</li>
+                            <li>Also Earned <b>2 more full-time</b> offers from <b>National Health Authority(NHA)</b>
+                                and <b>Global Logic</b> during the campus placement session of December 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>June-August 2022</span>
+                    <div class="content">
+                        <h3>Summer Internship at Northern Trust</h3>
+                        <ul>
+                            <li>Completed On-campus summer Internship in Software Development, also <b>earned fulltime
+                                    offer</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>December 2019</span>
+                    <div class="content">
+                        <h3>Branch change</h3>
+                        <ul>
+                            <li>Got my branch changed from Metallurgical Engg. to Mechanical Engg. by scoring 9.46 SGPA
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>April-July 2019</span>
+                    <div class="content">
+                        <h3>Started My Journey at IIT-BHU</h3>
+                        <ul>
+                            <li>Secured 92.8% in CBSE Intermediate Board examination</li>
+                            <li>Cleared National Defense Academy(NDA) written examination conducted by <b>UPSC</b></li>
+                            <li>Obtained <b>AIR-41</b><sup>st</sup> in B.Sc. Maths UET examination conducted by Banaras
+                                Hindu University(BHU)</li>
+                            <li>Obtained 98.1 percentile in JEE-MAINS 2019</li>
+                            <li>Started studying in Metallurgical Enginnering at IIT BHU(VARANASI) </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>May 2017</span>
+                    <div class="content">
+                        <h3>Secured 10 CGPA in high school </h3>
+                        <p>
+                        <ul>
+                            <li>Secured 10 CGPA in CBSE HighSchool Board examination.</li>
+                            <li>Started studying at Maharshi Patanjali Vidya Mandir,Prayagraj.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 
     <div class="contact">
